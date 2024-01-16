@@ -14,7 +14,7 @@ This repository contains a project. At the moment, I'm just test a login with th
 
 Este repositorio contiene un proyecto de prueba del sitio web "Swag Labs". Por el momento solo pruebo el proceso de inicio de sesión con el objetivo de mostrar como aplicar Pagefactory. Ire agregando más casos de prueba.
 
-#### For the development of the project I have used:
+#### Para el desarrollo de este proyecto utilizo:
 * Java
 * Selenium
 * JUnit
