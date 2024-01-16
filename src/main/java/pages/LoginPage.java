@@ -1,32 +1,31 @@
 package pages;
 
-import org.openqa.selenium.By;
-import utility.BrowserDriver;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends BrowserDriver {
+public class LoginPage extends BasePage{
 
-    public static By usernameInput = By.id("user-name");
-    private static By passwordInput = By.id("password");
-    private static By loginBtn = By.id("login-button");
-
-    public static void clickOnUsername() {
-        driver.findElement(usernameInput).click();
+    @FindBy(id = "user-name") private WebElement usernameInput;
+    @FindBy(id = "password") private WebElement passwordInput;
+    @FindBy(id = "login-button") private WebElement loginBtn;
+    public LoginPage(WebDriver driver){
+        super(driver);
     }
 
-    public static void entersTheUsername() {
-        driver.findElement(usernameInput).sendKeys("standard_user");
+    public void login (String username, String password){
+        usernameInput.click();
+        usernameInput.click();
+        usernameInput.sendKeys(username);
+        passwordInput.sendKeys(password);
+    }
+    public void clickOnLoginBtn(){
+        loginBtn.click();
     }
 
-    public static void clickOnPassword() {
-        driver.findElement(passwordInput).click();
+    public void openUrl(String url){
+        this.driver.get(url);
     }
 
-    public static void entersThePassword() {
-        driver.findElement(passwordInput).sendKeys("secret_sauce");
-    }
-
-    public static void clickOnLoginBtn() {
-        driver.findElement(loginBtn).click();
-    }
 
 }
