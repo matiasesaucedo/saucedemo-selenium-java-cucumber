@@ -7,7 +7,7 @@ This repository contains a project. At the moment, I'm just test a login with th
 * Selenium
 * JUnit
 * Cucumber
-
+* Maven
 --------------------------------------------------------------------------------
 
 ### (ES) Sobre este repositorio
@@ -19,3 +19,4 @@ Este repositorio contiene un proyecto de prueba del sitio web "Swag Labs". Por e
 * Selenium
 * JUnit
 * Cucumber
+* Maven
